@@ -1,0 +1,60 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-image: url(Road-with-Sky-wallpaper-for-editing.jpg);
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.wrapper {
+    background-color: rgb(201, 197, 197);
+    margin: 5% 30% auto;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    
+}
+
+.form-control input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 5px 0;
+}
+
+.form-control textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.form-control button {
+    width: 160px;
+    background-color: rgb(51, 50, 50);
+    color: #fff;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.form label, input{
+    cursor: pointer;
+}
+.form  {
+    padding-left: 10px;
+    
+}

@@ -1,0 +1,48 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+h1 span {
+    color: blue;
+}
+
+h2 {
+    font-family: sans-serif;
+}
+.nuoroda a {
+    color: blue;
+}
+
+.text-first {
+    line-height: 1.8;
+}
+
+.generator {
+    color: green;
+}
+
+
+
+.lorem {
+    font-weight: 550;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+.nuoroda {
+    color: green;
+}
+h5 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+}
+
+.spoiler {
+    color: red;
+    background-color: pink;
+    font-family: sans-serif;
+    font-size: 10px;
+}

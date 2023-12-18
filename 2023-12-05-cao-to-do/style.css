@@ -1,0 +1,141 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f8fafc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: baseline;
+    background-color: #fff;
+    box-shadow: 1px 3px 13px -6px;
+    padding: 20px 20px 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #645cff;
+}
+
+
+
+
+.wrapper {
+    display: flex;
+    margin-top: 3%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.task-desk {
+    background-color: #fff;
+    width: fit-content;
+    text-align: center;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 1px 3px 13px -6px;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.add-tasks {
+    display: flex;
+}
+
+button {
+    padding: 0 40px;
+    background-color: #645cff;
+    color: #fff;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+textarea {
+    padding: 5px 0;
+    border: 1px solid grey;
+    background-color: #f8fafc;
+}
+span {
+    color: #ac686d;
+    font-size: 12px;
+    float: left;
+}
+
+.done-task-table {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 1px 3px 13px -6px;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.done-task {
+    margin: 40px 0;
+    width: 570px;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 50px;
+}
+.crossed {
+    text-decoration: line-through;
+}
+
+input {
+    width: 300px;
+}
+
+
+.edit-task {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 600px;
+}
+
+.form-control {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    margin-bottom: 20px;
+}
+
+.task-edit-name {
+    text-align: center;
+}
+
+.error {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.back {
+    background-color: #222222;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 50px;
+    margin-top: 100px;
+}
+
+.bx {
+    color: #645cff;
+}

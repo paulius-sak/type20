@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="todo">
+            <h1 class="logo">Best <a href="task.html">ToDo</a> App</h1>
+        </div>
+        <div class="links">
+            <i class='bx bxl-facebook-circle' ></i>
+            <i class='bx bxl-twitter' ></i>
+            <i class='bx bxl-instagram-alt' ></i>
+        </div>
+    </nav>
+
+    <div class="wrapper">
+        <form action="">
+            <div class="edit-task">
+                <h1 class="task-edit-name">Edit Task</h1>
+                <div class="form-control">
+                    <label for="name">Task ID</label>
+                    <input type="text" name="person-name" id="name" value="" placeholder="" maxlength="40" minlength="3" required>
+                </div>
+                <div class="form-control">
+                    <label for="name">Name</label>
+                    <input type="text" name="person-name" id="name" value="" placeholder="" maxlength="20" minlength="3" required>
+                </div>
+                <div class="form-control">
+                    <label for="checkbox">Completed</label>
+                    <input type="checkbox" name="checkbox" id="checkbox" required>
+                </div>
+                <button class="edit" type="submit">Edit</button>
+                <span class="error">There Was An Error</span>
+            </div>
+
+        </form>
+
+        <a class="back" href="index.html">Back To Tasks</a>
+        
+    </div>
+</body>
+</html>

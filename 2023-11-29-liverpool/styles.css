@@ -1,0 +1,124 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    color: #a7a1ae;
+    background-color: #020a0e;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #00141e;
+    border-radius: 10px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+    display: block;
+    color: #a7a1ae;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+li a:hover {
+    color: red;
+}
+
+main {
+    background-color: #00141e;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+    
+}
+
+
+.anglija {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+
+    background-color: rgb(1,29,40);
+    border-radius: 10px;
+    margin-top: 20px;
+    
+
+}
+
+h1 {
+    color: gold;
+    padding: 0;
+    margin: 20px;
+    font-size: 30px;
+}
+
+.anglija a {
+    margin-right: 20px;
+    color: #a7a1ae;
+    font-weight: 200;
+
+}
+
+.etapas h2 {
+    margin: 10px;
+
+}
+.etapas {
+    display: flex;
+    width: 90%;
+    background-color: rgb(1,29,40);
+    border-radius: 10px;
+    margin-top: 20px;
+
+}
+
+
+.container {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+td:first-child {
+    width: 150px;
+    text-align: center;
+}
+
+td:nth-child(2) {
+    width: 500px;
+}
+
+td:nth-child(3) {
+    width: 50px;
+}
+td:nth-child(4) {
+    width: 60px;
+    border-right:1px solid rgb(5, 36, 49); 
+}
+
+.container td {
+    border-bottom: 1px solid rgb(5, 36, 49);
+    height: 60px;
+}
+
+.bx-star  {
+    font-size: 30px;
+}
+

@@ -1,0 +1,106 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #fafafa;
+}
+header {
+    text-align: center;
+    width: 30%;
+    margin: auto;
+}
+
+header h1 {
+    font-weight: 100;
+    opacity: 50%;
+    margin-top: 30px;
+}
+header h2 {
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 10px;
+    opacity: 70%;
+}
+
+span {
+    font-size: 14px;
+    opacity: 50%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 25px;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.box {
+    width: 300px;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0px 11px 15px 3px rgb(221 221 221);
+    border-radius: 6px;
+}
+
+.box:hover {
+    scale: 1.1;
+    transition: 0.4s ease;
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name {
+    font-size: 18px;
+    opacity: 70%;
+}
+.box p {
+    font-size: 12px;
+    opacity: 50%;
+    margin-bottom: 30px;
+}
+img {
+    float: right;
+}
+
+.supervisor {
+    border-top: 4px solid #47d0d0;
+}
+
+.team-builder {
+    border-top:4px solid #eb595c;
+}
+.calculator {
+    border-top:4px solid #f0b061;
+}
+.karma {
+    border-top:4px solid #90c1f7;
+}
+
+@media screen and (max-width: 970px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+}
+@media screen and (max-width: 910px) {
+    header {
+        width: 270px;
+    }
+}

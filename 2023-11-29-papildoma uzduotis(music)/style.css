@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Red+Hat+Display&family=Roboto:ital,wght@0,300;1,400;1,500&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: no-repeat;
+
+
+}
+.wrapper {
+    position: absolute;
+    width: 375px;
+    height: 600px;
+    box-shadow: 0 0 5px rgb(175, 177, 177);
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 300px;
+    
+}
+.wrapper-items {
+    display: flex;
+    flex-direction: column;
+}
+
+h2, p {
+    text-align: center;
+}
+
+h2 {
+    padding: 20px 0;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+p {
+    padding: 0 30px 20px;
+    color: hsl(224, 23%, 55%) ;
+}
+
+.plan {
+    display: flex;
+    background-color: hsl(225, 100%, 98%);
+    width: 275px;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 50px;
+}
+span {
+    color: hsl(224, 23%, 55%);
+    font-weight: 400;
+    font-size: 16px;
+}
+.plan h3 {
+    padding: 0 10px;
+    font-size: 16px;
+}
+.plan a {
+    cursor: pointer;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.plan a:hover {
+    text-decoration: none;
+}
+.payment-button {
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 10px;
+    height: 40px;
+    width: 275px;
+    margin: 20px 50px;
+    box-shadow: 0 4px 10px -2px rgb(128, 125, 125);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment-button:hover {
+    background-color: rgb(118,108,241);
+}
+
+.payment-button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.cancel {
+    text-align: center;
+}
+
+.cancel a {
+    text-decoration: none;
+    font-weight: 700;
+    color: hsl(224, 23%, 55%);
+}
+.cancel a:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+

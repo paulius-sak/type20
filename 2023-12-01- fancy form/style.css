@@ -1,0 +1,96 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #fff;
+}
+.fancy-form {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+    
+form {
+    background-color: #2f4f4f;
+    text-align: center;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pink {
+    background-color: rgb(255, 192, 250);
+}
+
+input[type="text"] {
+    color: black;
+    border-top: 5px solid rgb(49, 49, 49) ;
+    border-bottom: 5px solid grey;
+    border-right: 5px solid grey;
+    border-left: 5px solid rgb(49, 49, 49) ;
+}
+
+
+
+.form-control span {
+    font-size: 80%;
+}
+
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 40%;
+}
+
+
+.form-control label {
+    padding-top: 10px;
+}
+
+.form {
+    padding: 10px 0 ;
+}
+
+
+div:last-child {
+    padding-bottom: 30px;
+    
+}
+
+input[type="submit"] {
+    color: #fff;
+    background-color: green;
+    padding: 2px 5px;
+}
+input[type="submit"]:hover {
+    background-color: rgb(5, 48, 5);
+}
+
+
+
+
+input:valid,
+textarea:valid,
+input:in-range {
+  border: 3px solid green;
+}
+
+input:invalid,
+textarea:invalid,
+input:out-of-range {
+  border: 3px solid red;
+}
+
+input[type="checkbox"]:checked + label {
+    color: blue;
+  }

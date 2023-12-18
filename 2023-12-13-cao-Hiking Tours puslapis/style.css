@@ -1,0 +1,379 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    color: #645cff;
+}
+span {
+    color: #222222;
+}
+
+.nav-list ul  {
+    display: none;
+    gap: 20px;
+}
+
+.nav-list ul li {
+    font-size: 14px;
+    list-style-type: none;
+    
+    font-weight: 600;
+}
+
+.navbar li {
+    position: relative;
+}
+.navbar a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    color: #222222;
+}
+.navbar a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: linear-gradient(#e66465, #9198e5);
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+.navbar a:hover::after {
+    width: 100%;
+}
+
+
+
+.container-wide {
+    width: 100%;
+    background-color: #645cff;
+    color: #fff;
+    padding: 290px 20px;
+    text-align: center;
+}
+.main-heading {
+    font-weight: 400;
+    font-size: 44px;
+}
+p {
+    font-size: 12px;
+    padding: 20px 0 ;
+}
+.button {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 15px;
+    background-color: #645cff;
+    border: 1px solid black;
+    box-shadow: 0px 3px 10px #4c43f5;
+}
+.button:hover {
+    background: linear-gradient(#e66465, #9198e5);
+}
+
+.blue {
+    color: #645cff;
+}
+.container {
+    padding: 0 30px 60px;
+    margin: auto;
+    /* min-width: 380px; */
+}
+.about-container {
+    display: grid;
+    
+    
+    gap: 30px;
+}
+
+.image img {
+    width: 100%;
+}
+
+.heading {
+    text-align: center;
+    margin: 50px 0;
+    padding-top: 30px;
+}
+
+.read-more {
+    text-decoration: none;
+    color: #645cff;
+}
+.read-more:hover {
+    color: linear-gradient(#e66465, #9198e5);
+}
+
+.services {
+    padding: 15px;
+    background-color: #f7fafb;
+    margin: 30px 0;
+    min-width: 375px;
+}
+.services-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+}
+
+.box .bx {
+    padding: 10px 8px;
+    background-color: #645cff;
+}
+
+.bx {
+    cursor: pointer;
+}
+
+.bx:hover {
+    background: linear-gradient(#e66465, #9198e5);
+    transition: 0.3s ease-in;
+    border-radius: 50%;
+}
+
+h4 {
+    margin: 20px 0;
+    font-weight: 500;
+    font-weight: 500;
+    font-size: 18px;
+}
+.box-tours-img img {
+    width: 100%;
+    min-height: 253.33px;
+    object-fit: cover;
+}
+
+
+h2 {
+    font-size: 12px;
+    padding: 20px ;
+}
+h3 {
+    padding-top: 20px;
+}
+.map {
+    color: #645cff;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-tours {
+    box-shadow: 1px 4px 41px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+.box-tours:hover {
+    transform: scale(1.075);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+.date {
+    position: absolute;
+    top: 30px;
+    background-color: #645cff;
+    padding: 10px 0;
+    cursor: pointer;
+    padding-left: 20px;
+}
+.date:hover {
+    background: linear-gradient(#e66465, #9198e5);
+    transition: top 0.3s ease-in;
+}
+
+.featured-tours {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    
+}
+
+.container-tours {
+    display: grid;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+.tours {
+    text-align: center;
+    padding: 30px 0 100px;
+    margin: 0 auto;
+
+}
+.all-tours {
+    text-decoration: none;
+    color: #645cff;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    min-height: 248px;
+    object-fit: cover;
+
+}
+.gallery-container {
+    display: grid;
+    row-gap: 2px;
+    background-color: #4c43f5;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.gallery-heading {
+    width: 100%;
+    
+}
+
+.gallery {
+    background-color: rgb(245, 239, 239);
+    align-items: center;
+    margin: 0 auto;
+}
+
+.your-email {
+    display: flex;
+    border: 1px solid #fff;
+
+}
+.your-email input {
+    border: none;
+}
+
+button {
+    border: none;
+    font-size: 12px;
+    padding: 5px;
+    background-color: rgb(219, 214, 214);
+    cursor: pointer;
+}
+
+
+.email {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 20px;
+
+}
+.up-date {
+    color: #fff;
+    text-align: center;
+}
+
+
+footer {
+    background-color: #222222 ;
+    color: #fff;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.footer-list ul li {
+    display: inline-block;
+    font-size: 14px;
+    list-style-type: none;
+}
+
+.footer-list ul li:hover {
+    color: #645cff;
+    cursor: pointer;
+}
+
+.copyright {
+    font-size: 14px;
+}
+
+.footer-links .bx {
+    color: #645cff;
+}
+
+@media  screen and (min-width: 700px) {
+    .services-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .about-container {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    .container {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .container-tours {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .gallery-container {
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+    .email {
+        grid-column-end: span 2;
+    }
+    .container-wide {
+        background-image: linear-gradient(rgba(0, 0, 255, 0.705), rgba(255, 255, 0, 0)),url("desktop-hiking.jpeg");
+        object-fit: cover;
+        background-position: center;
+        opacity: 70%;
+        background-color: #645cff;
+    }
+    
+}
+
+@media  screen and (min-width: 1000px) {
+    .container-tours {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .nav-list ul  {
+        display: flex;
+    }
+}
+
+@media  screen and (min-width: 1100px) {
+    .gallery-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .email {
+        grid-column-end: span 4;
+    }
+
+    .image {
+        border: 5px solid #4c43f5;
+        position: relative;
+        width: 100%;
+        height: 344px;
+    }
+    .image img {
+        position: absolute;
+        left: 15px;
+        top: 15px;
+    }
+    p.up-date {
+        text-align: left;
+    }
+}

@@ -1,0 +1,122 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+    
+.header {
+    background-color: rgb(3, 3, 44);
+    
+}
+
+.logo {
+    width: 20%;
+    margin: 0 620px;
+    
+}
+
+h1 {
+    color: #fff;
+    margin: 20px 300px;
+}
+
+.menu {
+    background-color: rgb(202, 182, 5);
+    height: 50px;
+    margin: 0 300px;
+    display: absolute;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    float: right;
+    margin: 15px;
+
+
+}
+
+h2 {
+    margin: 30px 300px;
+}
+
+p {
+    margin: 0 300px;
+}
+
+.red {
+    display: block;
+    text-align: center;
+    margin: 30px;
+    border: none;
+}
+.red a{
+    border-radius: 10px;
+    background-color: red;
+    color: #fff;
+    padding: 10px 30px;
+}
+
+
+.table-page {
+    background-color: rgb(9, 0, 58);
+    
+}
+
+caption {
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    color: #fff;
+    text-align: center;
+    margin-left: 280px;
+}
+
+td.pavarde {
+    text-align: right;
+}
+td, th {
+    border: 1px solid rgb(161, 22, 22);
+    padding: 0.5rem;
+    width: 30rem;
+    
+}
+tfoot {
+    text-align: right;
+}
+
+.pavarde {
+    float: right;
+}
+
+ul li  {
+    margin: 0 350px;
+    
+}
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.go-up {
+    text-align: center;
+}
+.go {
+    display: block;
+    text-align: center;
+    margin: 30px;
+}
+
+.copyright {
+    background-color: rgb(202, 182, 5);
+    display: block;
+    text-align: center;
+    height: 40px;
+}
+.copyright p {
+    color: #fff;
+    padding: 10px;
+}

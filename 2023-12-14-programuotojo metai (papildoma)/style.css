@@ -1,0 +1,172 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 54px;
+}
+p {
+    padding: 20px 0;
+}
+
+body {
+    background-color: #000000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.chart-two {
+    padding: 50px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    line-height: 50px;
+    position: relative;
+}
+h3 {
+    border-right: 2px solid #fff;
+}
+
+
+.blue-two {
+    width: 100%;
+    border: 8px solid #1200ff;
+    border-radius: 15px;
+    position: absolute;
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    top: 18px;
+    animation: slideInLeft;
+    animation-duration: 2s;
+}
+
+
+.time {
+    position: absolute;
+    bottom: 1px;
+    right: -15px;
+   
+}
+
+.label {
+    position: absolute;
+    top: 132px;
+    font-size: 12px;
+
+}
+.pink-two {
+    width: 100%;
+    border: 8px solid #ff00e9;
+    border-radius: 15px;
+    position: absolute;
+    grid-column-start: 2;
+    grid-column-end: span 4;
+    top: 18px;
+    margin: 50px 0 0;
+    animation: slideInLeft;
+    animation-duration: 2s;
+}
+
+.green-two {
+    width: 100%;
+    border: 8px solid #00ffff;
+    border-radius: 15px;
+    position: absolute;
+    grid-column-start: 2;
+    grid-column-end: span 10;
+    top: 18px;
+    margin: 100px 0 0;
+    animation: slideInLeft;
+    animation-duration: 2s;
+}
+
+.year   {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 7.5%;
+    padding-right: 14.5%;
+}
+
+
+.year-name {
+    font-size: 12px;
+}
+
+.names ul li {
+    list-style-type: none;
+}
+
+@media screen and (max-width: 1170px) {
+    h3 {
+        font-size: 12px;
+    }
+    .label {
+        font-size: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 960px){
+    h3 {
+        font-size: 14px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    .year-name {
+        font-size: 12px;
+    }
+    .label {
+        font-size: 10px;
+    }
+    .grid {
+        grid-template-columns: 2fr repeat(12, 1fr);
+     
+    }
+    .year {
+        padding-left: 14%;
+        padding-right: 13%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .grid {
+        /* grid-template-columns: repeat(7, 1fr); */
+        grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    h3:nth-of-type(7) {
+        border-right: none;
+    }
+    .blue-two {
+        grid-column-start: 2;
+        grid-column-end: span 1;
+    }
+    .pink-two {
+        grid-column-start: 2;
+        grid-column-end: span 2;
+    }
+    .green-two {
+        grid-column-start: 2;
+        grid-column-end: span 5;
+    }
+    
+    .year span:nth-of-type(even) {
+        display: none; 
+    }
+    .year {
+        padding-left: 24%;
+        padding-right: 11%;
+    }
+
+    .chart-two {
+        padding: 30px;
+        
+    }
+    
+}
+    

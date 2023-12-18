@@ -1,0 +1,52 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    }
+    
+
+  .micro-img {
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }  
+
+  .menu {
+    display: flex;
+    background-color: green;
+    height: 50px;
+    width: 100%;
+   display: table;
+   text-align: center;
+}
+
+  .menu a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    float: none;
+    text-align: center;
+    margin: 0 20px;
+    margin-top: 15px;
+  }
+
+  section.grey-block {
+    background-color: rgb(211, 208, 208);
+    height: 100%;
+    padding: 20px;
+  }
+
+  .grey-block img {
+    width: 100%;
+  }
+
+  h1 {
+    color: #fff;
+    background-color: green;
+    padding: 20px;
+  }
+
+  section.green-block {
+    background-color: rgb(113, 158, 113);
+    height: 100%;
+    padding: 20px;
+  }

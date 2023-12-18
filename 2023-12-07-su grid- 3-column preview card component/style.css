@@ -1,0 +1,80 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    color: #fff;
+    font-family: 'Lexend Deca', sans-serif;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card {
+    padding: 40px;
+
+}
+
+.sedans {
+    background-color: #e28525;
+} 
+.suvs {
+    background-color: #016972;
+}
+.luxury {
+    background-color: #00403f;
+}
+
+h1 {
+    margin: 20px 0;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.card p {
+    opacity: 50%;
+    font-weight: 400;
+}
+
+.card a {
+    background-color: #fff;
+    padding: 12px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-top: 100px;
+    margin-right: 100px;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.button-sedans {
+    color: #e28525;
+}
+.button-suvs {
+    color: #016972;
+}
+.button-luxury {
+    color: #00403f;
+}
+
+.button-sedans:hover,
+.button-suvs:hover,
+.button-luxury:hover {
+    background-color: transparent;
+    color: #fff;
+    outline: 2px solid #fff;
+}
+
+
+
+
+
+    

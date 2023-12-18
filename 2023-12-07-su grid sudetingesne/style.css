@@ -1,0 +1,129 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #edf2f8;
+}
+
+
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    color: #fff;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 2%;
+}  
+
+
+
+.daniel {
+    
+    grid-column-end: span 2;
+    background-color: #733fc8;
+    background-image: url(bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 400px 1px;
+}
+
+.jonathan {
+    background-color: #49556b;
+}
+
+.patrick {
+    grid-column-end: span 2 ;
+    background-color: #18202d;
+}
+
+.kira {
+    grid-row-end: span 2;
+    color: black;
+    background-color: #fff;
+}
+
+.jeanette {
+    color: black;
+    background-color: #fff;
+}
+
+.box {
+    padding: 30px;
+    border-radius: 15px;
+}
+
+
+.header {
+    display: flex;
+    gap: 20px;
+}
+img {
+    border-radius: 50%;
+    border: 1px solid #fff;
+    width: 30px;
+    height: 30px;
+}
+
+h1 {
+    font-size: 14px;
+}
+h2 {
+    font-size: 10px;
+    opacity: 50%;
+}
+
+p {
+    opacity: 50%;
+}
+
+.pavadinimas {
+    padding: 20px 0;
+    font-size: 22px;
+}
+.paragrafas {
+    font-size: 14px;
+}
+
+
+
+@media screen and (max-width: 1050px) {
+    .container {
+        grid-template-columns: 1fr;
+        max-width: 800px;
+        gap: 20px;
+    }
+    .daniel {
+        grid-column-end: span 1;
+    }
+    .patrick {
+        grid-column-end: span 1
+    }
+    .kira {
+        grid-row-end: span 1;
+        order: 1;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .container {
+        gap: 15px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .container {
+        gap: 10px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .container {
+        gap: 0px;
+        margin-top: 0;
+    }
+    .box {
+        border-radius: 0px;
+    }
+}

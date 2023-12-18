@@ -1,0 +1,171 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #edf2f8;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.daniel {
+    background-color: #733fc8;
+    border-radius: 15px;
+    width: 65%;
+    /* max-width: 600px;
+    min-width: 600px; */
+    color: #fff;
+    background-image: url(bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 400px 1px;
+}
+
+
+
+.walters {
+    background-color: #49556b;
+    border-radius: 15px;
+    width: 30%;
+    /* max-width: 300px;
+    min-width: 300px; */
+}
+
+
+.harmon {
+    background-color: #ffffff;
+    border-radius: 15px;
+    width: 30%;
+    /* max-width: 300px;
+    min-width: 300px; */
+    color: rgb(68, 67, 67);
+}
+
+.pavadinimas {
+    padding: 20px 0;
+    font-size: 22px;
+}
+.paragrafas {
+    font-size: 14px;
+    opacity: 50%;
+}
+
+.abrams {
+    background-color: #18202d;
+    border-radius: 15px;
+    width: 65%;
+    /* max-width: 600px;
+    min-width: 600px; */
+}
+
+
+
+.whittle {
+    background-color: #fefefd;
+    border-radius: 15px;
+    width: 100%;
+    /* max-width: 300px;
+    min-width: 300px; */
+    color: rgb(68, 67, 67);
+}
+
+.whittle p {
+    opacity: 50%;
+}
+
+.header {
+    display: flex;
+    gap: 20px;
+    
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 20px;
+    margin: 0 5%;
+    justify-content: center;
+    gap: 20px;
+}
+    
+h1 {
+    font-size: 14px;
+}
+h2 {
+    font-size: 10px;
+    opacity: 50%;
+}
+img {
+    border-radius: 50%;
+    border: 1px solid #fff;
+    width: 30px;
+}
+.card {
+    padding: 30px;
+}
+ 
+
+.card-kaire {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    color: #fff;
+    justify-content: center;
+    max-width: 1000px;
+}
+
+.card-desine {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    width: 300px;
+}
+
+
+
+@media screen and (max-width: 1367px){
+    .walters,
+    .harmon {
+        min-width: 30%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+    /* .daniel {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 667px) {
+    .daniel {
+        max-width: 300px;
+        min-width: 300px;
+    }
+
+    .abrams {
+        max-width: 300px;
+        min-width: 300px;
+    }
+    .walters,
+    .harmon {
+        max-width: 300px;
+        min-width: 300px; 
+    }
+} */
+
+
+
+    
