@@ -26,7 +26,7 @@ body {
     padding: 50px 100px ;
     margin: auto;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1450px;
     overflow: hidden;
 }
 .header-items {
@@ -469,17 +469,7 @@ footer {
     .container {
         padding: 50px 30px;
     }
-    .main-left h1 {
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 27.84px;
-    }
-    .main-left p {
-        font-size: 10px;
-        font-weight: 600;
-        line-height: 13.20px;
-        letter-spacing: 0.40px;
-    }
+    
     .main-left {
         background-position: 70px 110px;
     }
@@ -501,24 +491,14 @@ footer {
     .main-right img {
         width: 100%;
     }
-    .trip-box h4 {
-        font-size: 12px;
-    }
-    .trip-box p {
-        font-size: 8px;
-    }
+    
     .trip-box {
         padding: 22px 22px 24px;
     }
     .top {
         font-size: 13px;
     }
-    .heading h1 {
-        font-size: 20px;
-    }
-    p {
-        font-size: 10px;  
-    }
+    
     .box-awesome {
         grid-column-end: span 2 ;
     }
@@ -529,4 +509,29 @@ footer {
         grid-column-end: span 2 ;
     }
     
+}
+@media screen and (max-width:670px) {
+    .main-left h1 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 27.84px;
+    }
+    .main-left p {
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 13.20px;
+        letter-spacing: 0.40px;
+    }
+    .trip-box h4 {
+        font-size: 12px;
+    }
+    .trip-box p {
+        font-size: 8px;
+    }
+    .heading h1 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 10px;  
+    }
 }
