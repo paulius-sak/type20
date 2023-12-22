@@ -1,0 +1,355 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    background: linear-gradient(180deg, rgba(243,231,224,1) 20%, rgba(247,245,241,1) 32%, rgb(255, 255, 255) 100%);
+}
+
+.container {
+    padding: 50px 100px ;
+    margin: auto;
+    width: 100%;
+    max-width: 1400px;
+    overflow: hidden;
+}
+.header-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.logo {
+    display: flex;
+    gap: 12px;
+}
+
+.navbar {
+    display: flex;
+    gap: 48px;
+    
+}
+
+.navbar li {
+    list-style-type: none;
+}
+.navbar li a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.navbar-btn {
+    border-radius: 3px;
+    padding: 10px 15px;
+    background: linear-gradient(98deg, #647B64 0%, #66AC66 100%);
+}
+.header-btn a {
+    text-decoration: none;
+    color: #FEFEFE;
+    font-size: 16px;
+
+}
+
+.main-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    padding: 0 40px;
+}
+
+.main-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image:  url(img/Ellipse116.png);
+    background-repeat: no-repeat;
+    background-position: 145px 89px;
+}
+
+.main-left h1 {
+    color: #333333;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 55.68px;
+    word-wrap: break-word;
+}
+
+.main-left p {
+    color: #4F4F4F;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26.40px;
+    letter-spacing: 0.80px;
+    word-wrap: break-word;
+    padding: 24px 16px 59px 0;
+}
+
+.btn-green {
+    text-decoration: none;
+    color: #FEFEFE;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20.08px;
+    letter-spacing: 2.48px;
+    background: linear-gradient(98deg, #647B64 0%, #66AC66 100%);
+    border-radius: 2px;
+    box-shadow: 0px 20px 40px rgba(128, 143, 150, 0.19);
+    padding: 27px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 350px;
+    align-items: center;
+}
+
+.btn-green:hover,
+.navbar-btn:hover,
+.bx:hover {
+    outline: 6px solid #F3B76A;
+    transition: 0.3s ease-in-out;
+}
+
+.main-right {
+    background-image: url(img/Ellipse118.png);
+    background-repeat: no-repeat;
+    background-position: 0 100px ;
+}
+
+.trip-items {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 109px;
+}
+
+
+.top {
+    color: #F3B562;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 40px 0 17px;
+}
+.heading h1 {
+    color: #647B64;
+    font-size: 41px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-bottom: 56px;
+}
+
+.trip-left p,
+.about-us-right p {
+    padding-bottom: 40px;
+}
+
+.trip-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.trip-box {
+    padding: 40px 45px;
+    border-radius: 8px;
+}
+
+.trip-box:hover {
+    background-color: #FEFEFE;
+    box-shadow: 0px 5.874383926391602px 31.330047607421875px rgba(155.13, 148.02, 148.04, 0.17);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.trip-box:hover .svg  {
+    fill: #FEFEFE;
+    background-color: #699669;
+    transition: 0.3s ease-in-out;
+}
+
+
+.trip-box h4,
+.cards-box h4 {
+    padding: 16px 0 6px;
+}
+
+.trip-box img {
+    padding: 12px;
+    background: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+    border-radius: 8px
+}
+
+.heading-center {
+    text-align: center;
+}
+
+.cards-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+.cards-box {
+    padding: 78px 50px 72px;
+    background: linear-gradient(0deg, rgba(235,238,235,1) 0%, rgba(235,238,235,1) 0%, rgb(255, 255, 255) 37%);
+    border-radius: 8px
+}
+
+.cards-box:hover  {
+    background: #647B64;
+    color: #fff;
+    fill: #fff;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.cards-box:hover .svg  {
+    background-color: #fff;
+    fill: #FEFEFE;
+    transition: 0.3s ease-in-out;
+    border-radius: 8px;
+}
+
+
+.about-us-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 105px;
+}
+
+.about-us-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.split-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.arrows {
+    display: flex;
+    gap: 35px;
+}
+
+
+.rotate {
+    transform: rotate(0.5turn);
+}
+
+
+
+.store-box-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.store-box {
+    border-radius: 8px;
+    background: linear-gradient(0deg, rgba(235,238,235,1) 0%, rgba(235,238,235,1) 0%, rgb(255, 255, 255) 37%);
+}
+
+.store-box:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+.store-box-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 32px 32px 24px 40px;
+}
+
+.cto h5 {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.56px; 
+}
+.cto h6 {
+    color: #4F4F4F;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17.16px;
+    letter-spacing: 0.52px;
+}
+
+.italic {
+    padding: 0 60px 32px 40px ;
+    color: #4F4F4F;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 21.12px;
+}
+
+footer {
+    background-color: rgb(240,220,197);
+}
+
+.footer-box-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 66px;
+}
+
+.box-awesome p {
+    /* padding-top: 16px; */
+    color: #4F4F4F;
+    font-size: 14px;
+}
+.social-icons {
+    padding-top: 16px;
+    display: flex;
+    gap: 20px;
+}
+.bx {
+    background-color: rgb(226,210,188);
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.footer-box h5 {
+    color: #647B64;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    padding-bottom: 12px;
+}
+.footer-box h6 {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    /* padding-top: 12px; */
+}
+
+
+
+#email {
+    border: none;
+    color: #4F4F4F;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 12px 24px;
+}
+
+.footer-btn {
+    width: 100%;
+    height: 57px;
+    font-size: 12.41px;
+}
+.footer-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+}
+.box-messages h5 {
+    padding: 0;
+}
