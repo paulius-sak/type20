@@ -273,6 +273,37 @@ console.log('-------------------------------------------------------------------
 // 3.49. Gauti tik skaičius, kurie yra didesni arba lygūs 888, mažesni už 1000 ir kurie dalinasi iš 2.
 // 3.50. Gauti tik skaičius, kurie yra mažesni arba lygūs 888, didesni arba lygūs -333, dalinasi iš 3 ir nėra nulis.
 
+// 3.51. Gauti tik skaičius.
+// 3.52. Gauti tik tekstus (string).
+// 3.53. Gauti tik tekstus (string), kurie turi daugiau nei 5 simbolius.
+// 3.54. Gauti tik tekstus (string), kurie turi mažiau arba lygiai 5 simbolius.
+// 3.55. Gauti tik tekstus (string), kurie turi mažiau nei 7 simbolius.
+// 3.56. Gauti tik tekstus (string), kurie turi raidę t.
+// 3.57. Gauti tik tekstus (string), kurie turi raidę y.
+// 3.58. Gauti tik tekstus (string), kurie turi raides e arba a.
+// 3.59. Gauti tik tekstus (string), kurie turi raides t ir i.
+// 3.60. Gauti tik tekstus (string), kurie turi raide t, bet neturi raidės k.
+// 3.61. Gauti tik tekstus (string), kurie turi raide a, bet neturi raidės s.
+// 3.62. Gauti tik tekstus (string), kurie turi daugiau nei vieną raidę t.
+// 3.63. Gauti tik tekstus (string), kurie turi raidžių junginį st.
+// 3.64. Gauti tik tekstus (string), kurie turi raidžių junginį nd.
+// 3.65. Gauti tik tekstus (string), kurie neturi raidės s.
+// 3.66. Gauti tik tekstus (string), kurie neturi raidės t.
+// 3.67. Gauti tik tekstus (string), kurie neturi raidės r ir l.
+// 3.68. Gauti tik tekstus (string), kurie prasideda skaičiumi.
+// 3.69. Gauti tik tekstus (string), kurie prasideda raide s.
+// 3.70. Gauti tik tekstus (string), kurie prasideda raide o.
+// 3.70. Gauti tik tekstus (string), kurie baigiasi raide d.
+// 3.71. Gauti tik tekstus (string), kurie baigiasi raide s.
+// 3.72. Gauti tik tekstus (string), kurie turi daugiau nei 4 simbolius ir turi raidę o.
+// 3.73. Gauti tik tekstus (string), kurie turi daugiau arba lygiai 5 simbolius ir turi raidę a.
+// 3.74. Gauti tik tekstus (string), kurie turi porinį simbolių skaičių.
+// 3.75. Gauti tik tekstus (string), kurie turi neporinį simbolių skaičių ir turi raidę s.
+// 3.76. Gauti tik tekstus (string), kurių trečias simbolis yra a.
+// 3.77. Gauti tik tekstus (string), kurių ketvirtas simbolis yra l.
+// 3.78. Gauti tik tekstus (string), kurių penktas simbolis nėra t ir kurie turi daugiau simbolių nei 4.
+// 3.79. Gauti tik tekstus (string), kurių pirmas simbolis nėra e, kurie turi mažiau simbolių nei 6 ir kurie neprasideda skaičiumi.
+
 let arr3 = ['start', 2, 3, 5, 11, 155, 888, '15x', 6789, -5564, 'obuolys', -51, 55, 0, 33, 789, 6543, 1, 'trylika', 444, 321, 654, -1, 987, -333, -321, 'end']
 console.log(arr3)
 
@@ -428,3 +459,98 @@ console.log(filteredNums349)
 
 let filteredNums350 = arr3.filter(num => num <= 888  && num >= -333  && num % 3 === 0 && num !== 0)
 console.log(filteredNums350)
+
+
+console.log('-------------------------------------')
+
+let arr4 = ['start', 2, 3, 5, 11, 155, 888, '15x', 6789, -5564, 'obuolys', -51, 55, 0, 33, 789, 6543, 1, 'trylika', 444, 321, 654, -1, 987, -333, -321, 'end']
+console.log(arr4)
+
+let filteredNums351 = arr4.filter(num => typeof num === 'number')
+console.log(filteredNums351)
+
+let filteredNums352 = arr4.filter(num => typeof num === 'string')
+console.log(filteredNums352)
+
+let filteredNums353 = arr4.filter(num => typeof num === 'string' && num.length > 5 )
+console.log(filteredNums353)
+
+let filteredNums354 = arr4.filter(num => typeof num === 'string' && num.length <= 5 )
+console.log(filteredNums354)
+
+let filteredNums355 = arr4.filter(num => typeof num === 'string' && num.length < 7 )
+console.log(filteredNums355)
+
+let filteredNums356 = arr4.filter(num => typeof num === 'string' && num.includes('t'))
+console.log(filteredNums356)
+
+let filteredNums357 = arr4.filter(num => typeof num === 'string' && num.includes('y'))
+console.log(filteredNums357)
+
+let filteredNums358 = arr4.filter(num => typeof num === 'string' && (num.includes('e') || num.includes('a')))
+console.log(filteredNums358)
+
+let filteredNums359 = arr4.filter(num => typeof num === 'string' && (num.includes('t') && num.includes('i')))
+console.log(filteredNums359)
+
+let filteredNums360 = arr4.filter(num => typeof num === 'string' && (num.includes('t') && !num.includes('k')))
+console.log(filteredNums360)
+
+let filteredNums361 = arr4.filter(num => typeof num === 'string' && (num.includes('a') && !num.includes('s')))
+console.log(filteredNums361)
+
+// let filteredNums362 = arr4.filter(num => typeof num === 'string' && num.includes('t'))
+// console.log(filteredNums362)
+
+let filteredNums363 = arr4.filter(num => typeof num === 'string' && num.includes('st') )
+console.log(filteredNums363)
+
+let filteredNums364 = arr4.filter(num => typeof num === 'string' && num.includes('nd') )
+console.log(filteredNums364)
+
+let filteredNums365 = arr4.filter(num => typeof num === 'string' && !num.includes('s') )
+console.log(filteredNums365)
+
+let filteredNums366 = arr4.filter(num => typeof num === 'string' && !num.includes('t') )
+console.log(filteredNums366)
+
+// let filteredNums367 = arr4.filter(num => typeof num === 'string' && num.startsWith('1'))
+// console.log(filteredNums367)
+
+let filteredNums368 = arr4.filter(num => typeof num === 'string' && num.startsWith('s') )
+console.log(filteredNums368)
+
+let filteredNums369 = arr4.filter(num => typeof num === 'string' && num.startsWith('o') )
+console.log(filteredNums369)
+
+let filteredNums370 = arr4.filter(num => typeof num === 'string' && num.endsWith('d') )
+console.log(filteredNums370)
+
+let filteredNums371 = arr4.filter(num => typeof num === 'string' && num.endsWith('s') )
+console.log(filteredNums371)
+
+let filteredNums372 = arr4.filter(num => typeof num === 'string' && num.includes('o') && num.length > 4 )
+console.log(filteredNums372)
+
+let filteredNums373 = arr4.filter(num => typeof num === 'string' && num.includes('a') && num.length >= 5 )
+console.log(filteredNums373)
+
+let filteredNums374 = arr4.filter(num => typeof num === 'string' && num.length % 2 === 0 )
+console.log(filteredNums374)
+
+let filteredNums375 = arr4.filter(num => typeof num === 'string' && (num.length % 2 !== 0 && num.includes('s')))
+console.log(filteredNums375)
+
+let filteredNums376 = arr4.filter(num => typeof num === 'string' && num[2].toLowerCase() === 'a')
+console.log(filteredNums376)
+
+let filteredNums377 = arr4.filter(num => typeof num === 'string' && num.length >= 4 && num[3].toLowerCase() === 'l')
+console.log(filteredNums377)
+
+let filteredNums378 = arr4.filter(num => typeof num === 'string' && num.length > 4 && num[4].toLowerCase() !== 't')
+console.log(filteredNums378)
+
+// let filteredNums379 = arr4.filter(num => typeof num === 'string' && num.length < 6 && !num.startsWith('e'))
+// console.log(filteredNums379)
+
+
