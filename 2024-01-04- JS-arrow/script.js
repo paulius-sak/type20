@@ -159,3 +159,70 @@
 // Sukurkite funkciją arMasyvaiLygūs, kuri palygina du masyvus ir grąžina true, jei jie yra identiški, kitu atveju - false.
 
 
+// let areArraysEqual = (arr1, arr2) => {
+//     if (arr1.length !== arr2.length) 
+//     return false
+//     for (let i = 0; i < arr1.length; i++) {
+//         if (arr1[i] !== arr2[i]) {
+//             return false
+//         }
+//     }
+//     return true
+// }
+
+// console.log(areArraysEqual([1, 2, 3], [1, 2, 3]))
+
+
+
+
+
+
+// Sukurkite funkciją reverseString, kuri apverčia eilutę be jokių išorinių funkcijų ar metodų.
+
+// let reverseString = (str) => {
+//     let reversed = ''
+//     for (let i = str.length - 1; i >= 0; i--) {
+//         reversed += str[i]
+//     }
+//     return reversed
+// }
+
+// console.log(reverseString("cia sunku yra"))
+
+
+
+
+
+
+// Parašykite funkciją arPalindromas, kuri tikrina, ar žodis yra palindromas. Funkcija turi grąžinti true, jei žodis yra palindromas, priešingu ateju  - false.
+
+
+// let isPalindrome = (word) => {
+//     for (let i = 0; i < word.length / 2; i++) {
+//         if (word[i] !== word[word.length - 1 - i]) {
+//             return false
+//         }
+//     }
+//     return true
+// }
+// console.log(isPalindrome("savas"))
+
+
+
+
+
+// Sukurkite funkciją printPyramid, kuri spausdina skaičių piramidę iki nurodyto aukščio. Pavyzdžiui, 3 auktštų piramidė atrodo taip:    1
+                                                    //  22
+                                                    //  333
+
+
+// let printPyramid = (height) => {
+//     for (let i = 1; i <= height; i++) {
+//         let line = ''
+//         for (let j = 0; j < i; j++) {
+//             line += i
+//         }
+//         console.log(line)
+//     }
+// }
+// console.log(printPyramid(6))
