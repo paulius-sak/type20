@@ -499,8 +499,8 @@ console.log(filteredNums360)
 let filteredNums361 = arr4.filter(num => typeof num === 'string' && (num.includes('a') && !num.includes('s')))
 console.log(filteredNums361)
 
-// let filteredNums362 = arr4.filter(num => typeof num === 'string' && num.includes('t'))
-// console.log(filteredNums362)
+let filteredNums362 = arr4.filter(num => typeof num === 'string' && num.split('t').length > 2)
+console.log(filteredNums362)
 
 let filteredNums363 = arr4.filter(num => typeof num === 'string' && num.includes('st') )
 console.log(filteredNums363)
@@ -514,8 +514,8 @@ console.log(filteredNums365)
 let filteredNums366 = arr4.filter(num => typeof num === 'string' && !num.includes('t') )
 console.log(filteredNums366)
 
-// let filteredNums367 = arr4.filter(num => typeof num === 'string' && num.startsWith('1'))
-// console.log(filteredNums367)
+let filteredNums367 = arr4.filter(num => typeof num === 'string' && !num.includes('t') && !num.includes('l'))
+console.log(filteredNums367)
 
 let filteredNums368 = arr4.filter(num => typeof num === 'string' && num.startsWith('s') )
 console.log(filteredNums368)
@@ -550,7 +550,7 @@ console.log(filteredNums377)
 let filteredNums378 = arr4.filter(num => typeof num === 'string' && num.length > 4 && num[4].toLowerCase() !== 't')
 console.log(filteredNums378)
 
-// let filteredNums379 = arr4.filter(num => typeof num === 'string' && num.length < 6 && !num.startsWith('e'))
-// console.log(filteredNums379)
+let filteredNums379 = arr4.filter(num => typeof num === 'string' && num.length < 6 && !num.startsWith('e') && isNaN(num.charAt(0)))
+console.log(filteredNums379)
 
 
