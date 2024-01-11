@@ -75,15 +75,27 @@ company1.getFullAddress = function() {
 // 6 UZDUOTIS
 company1.setNvoStatus = function() {
     this.nvo = false
+    return this.nvo
+}
 
+company1.setNvoStatus = function() {
+    this.nvo = true
     return this.nvo
 }
 
 
 company1.nvoStatus = function() {
     this.nvo = !this.nvo
+    return this.nvo
 }
 
+console.log(company1.nvo)
+company1.setNvoStatus()
+console.log(company1.nvo)
+company1.nvoStatus()
+console.log(company1.nvo)
+company1.nvoStatus()
+console.log(company1.nvo)
 // 7 UZDUOTIS
 
 company1.workingLocationsList = function() {
