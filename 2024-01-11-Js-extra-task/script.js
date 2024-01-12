@@ -345,4 +345,26 @@ function task729(postsData) {
 }
   console.log(task729(posts))
 task729(posts)
+
 // 7.30. Išvesti visų masyvo narių pavadinimus surūšiuotus nuo mažiausiai iki daugiausiai raidžių "body" property turinčių narių. Papildomai, prie išvesto teksto pridėti ir "body" raidžių skaičių.
+
+function task730(postsData) {
+ let sortedPosts = postsData.toSorted((a, b) => a.body.length - b.body.length)
+ 
+ let finishedPosts = sortedPosts.map(post => {
+    let body = post.body
+    let bodyLength = body.length
+
+    let updatedPost = {
+      id: post.id,
+      title: post.title,
+      body: `(body nariu skaicius: ${bodyLength}) ${body}`,
+    }
+    return updatedPost
+    
+  })
+      console.log(finishedPosts)
+  }
+
+task730(posts)
+
