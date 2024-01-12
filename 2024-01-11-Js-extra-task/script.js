@@ -268,75 +268,81 @@ task719(posts)
 
 // 7.22. Išvesti tik tuos masyvo narius, kurių pavadinimas prasideda raide "s".
 
-function task722(posts) {
-    return posts.filter(post => post.title.charAt(0).toLowerCase() === 's')
+function task722(postsData) {
+    return postsData.filter(post => post.title.charAt(0).toLowerCase() === 's')
 }
-let inStartOutput = task722(posts)
-console.log(inStartOutput)
+console.log(task722(posts))
 task722(posts)
 // 7.23. Išvesti tik tuos masyvo narius, kurių pavadinimas baigiasi "t" arba "m".
-function task723(posts) {
-    return posts.filter(post => post.title.charAt(post.title.length - 1).toLowerCase() === 't' || post.title.charAt(post.title.length - 1).toLowerCase() === 'm' )
+function task723(postsData) {
+    return postsData.filter(post => post.title.charAt(post.title.length - 1).toLowerCase() === 't' || post.title.charAt(post.title.length - 1).toLowerCase() === 'm' )
 }
-let inEndOutput = task723(posts)
-console.log(inEndOutput)
+console.log(task723(posts))
 task723(posts)
 // 7.24. Išvesti tik tuos masyvo narius, kurių pavadinimas turi daugiau simbolių nei 15.
 
-function task724(posts) {
-    return posts.filter(post => post.title.length >= 15)
+function task724(postsData) {
+    return postsData.filter(post => post.title.length >= 15)
 }
-let charLenghtOutput = task724(posts)
-console.log(charLenghtOutput)
+console.log(task724(posts))
 task724(posts)
 
 // 7.25. Išvesti tik tuos masyvo narius, kurių pavadinimas turi mažiau simbolių nei 20 ir kurių "body" turi daugiau simbolių nei 50.
-function task725(posts) {
-    return posts.filter(post => post.title.length < 20 && post.body.length > 50)
+function task725(postsData) {
+    return postsData.filter(post => post.title.length < 20 && post.body.length > 50)
 }
-let charLenghtOutput2 = task725(posts)
-console.log(charLenghtOutput2)
+console.log(task725(posts))
 task725(posts)
 // 7.26. Išvesti tik tuos masyvo narius, kurių pavadinimas turi tarp 20 ir 30 simbolių ir kurių "body" turi tarp 70 ir 130 simbolių.
-function task726(posts) {
-    return posts.filter(post => 
+function task726(postsData) {
+    return postsData.filter(post => 
         post.title.length >= 20 && 
         post.title.length <= 30 && 
         post.body.length >= 70 && 
         post.body.length <= 130)
 }
-let charLenghtOutput3 = task726(posts)
-console.log(charLenghtOutput3)
+console.log(task726(posts))
 task726(posts) 
 // 7.27. Išvesti tik tuos masyvo narius, kurių pavadinimas turi simbolių junginį "it", o "body" turi simbolių junginį "quo".
-function task727(posts) {
-    return posts.filter(post => post.title.includes ('it') && post.body.includes('quo'))
+function task727(postsData) {
+    return postsData.filter(post => post.title.includes('it') && post.body.includes('quo'))
 }
-let includesOutput = task727(posts)
-console.log(includesOutput)
+console.log(task727(posts))
 task727(posts) 
 
 
 // 7.28. Išvesti tik tuos masyvo narius, kurių "body" turi žodį "sit". Jeigu žodis turi šį simbolių junginį, tačiau tai nėra pilna jo reikšmė (pvz. žodžiai "sitto" ar "quasit"), jie neturėtų būti atvaizduojami.
 
-function task728(post) {
-  const words = post.body.split(' ')
-  return words.includes('sit')
+// function task728(post) {
+//   const words = post.body.split(' ')
+//   return words.includes('sit')
+// }
+
+// posts.filter(task728)
+// console.log(posts.filter(task728))
+
+function task728(postsData) {
+    return postsData.filter(post => post.body.split(' ').includes('sit'))
 }
-
-posts.filter(task728)
-console.log(posts.filter(task728))
-
+console.log(task728(posts))
+task728(posts)
 // 7.29. Išvesti tik tuos masyvo narius, kurių pavadinimas turi daugiau nei 3 "a" raides, o "body" turi mažiau nei 7 "o" raides.
 // susplit 
-function task729(post) {
-  const countAInTitle = (post.title.split('a').length - 1)
-  const countsOInTitle = (post.body.split('o').length - 1)
-  return countAInTitle > 3 && countsOInTitle < 7
+
+// function task729(post) {
+//   const countAInTitle = (post.title.split('a').length - 1)
+//   const countsOInTitle = (post.body.split('o').length - 1)
+//   return countAInTitle > 3 && countsOInTitle < 7
+// }
+
+// posts.filter(task729)
+// console.log(posts.filter(task729))
+
+function task729(postsData) {
+  return postsData.filter(post =>
+    (post.title.split('a').length - 1) > 3 &&
+    (post.body.split('o').length - 1) < 7)
 }
-
-posts.filter(task729)
-console.log(posts.filter(task729))
-
-
+  console.log(task729(posts))
+task729(posts)
 // 7.30. Išvesti visų masyvo narių pavadinimus surūšiuotus nuo mažiausiai iki daugiausiai raidžių "body" property turinčių narių. Papildomai, prie išvesto teksto pridėti ir "body" raidžių skaičių.
