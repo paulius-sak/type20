@@ -319,7 +319,24 @@ task727(posts)
 
 // 7.28. Išvesti tik tuos masyvo narius, kurių "body" turi žodį "sit". Jeigu žodis turi šį simbolių junginį, tačiau tai nėra pilna jo reikšmė (pvz. žodžiai "sitto" ar "quasit"), jie neturėtų būti atvaizduojami.
 
+function task728(post) {
+  const words = post.body.split(' ')
+  return words.includes('sit')
+}
+
+posts.filter(task728)
+console.log(posts.filter(task728))
 
 // 7.29. Išvesti tik tuos masyvo narius, kurių pavadinimas turi daugiau nei 3 "a" raides, o "body" turi mažiau nei 7 "o" raides.
+// susplit 
+function task729(post) {
+  const countAInTitle = (post.title.split('a').length - 1)
+  const countsOInTitle = (post.body.split('o').length - 1)
+  return countAInTitle > 3 && countsOInTitle < 7
+}
+
+posts.filter(task729)
+console.log(posts.filter(task729))
+
 
 // 7.30. Išvesti visų masyvo narių pavadinimus surūšiuotus nuo mažiausiai iki daugiausiai raidžių "body" property turinčių narių. Papildomai, prie išvesto teksto pridėti ir "body" raidžių skaičių.
