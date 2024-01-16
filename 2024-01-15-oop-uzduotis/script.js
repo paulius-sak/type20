@@ -15,12 +15,18 @@
 //        6.3. Jeigu nurodytos spalvos nėra tarp bazinių spalvų, tai automobilio kaina turėtų padidėti 3000.
 
 class Cars {
-  constructor(brand, model, engine, basePrice, mileage) {
+  constructor(brand, model, engine, basePrice, mileage, color = 'juoda') {
     this.brand = brand
     this.model = model
     this.engine = engine
     this.basePrice = basePrice
     this.mileage = mileage
+    this.baseColors = ['juoda', 'raudona', 'mėlyna', 'sidabrinė', 'balta', 'special blue']
+    this.color = color
+    // this.finalPrice = basePrice
+  }
+  getPriceText() {
+    return `Final price for ${this.brand} ${this.model} with ${this.engine} engine ${this.mileage} mileage and color ${this.color} is: ${this.getPrice()}`
   }
   turnOn() {
     alert('vroom!')
@@ -35,7 +41,36 @@ class Cars {
             finalPrice += 5000
             break;
     }
-    console.log(`Final price for ${this.brand} ${this.model} with ${this.engine} engine is: ${finalPrice}`)
+
+    if(this.mileage > 0) {
+      finalPrice *= 0.9
+    }
+
+    if(this.mileage > 20000) {
+      finalPrice *= 0.85
+    }
+
+    if(this.mileage > 50000) {
+      finalPrice *= 0.8
+    }
+
+    if(this.mileage > 100000) {
+      finalPrice *= 0.7
+    }
+
+    if(this.mileage > 400000) {
+      finalPrice *= 0.5
+    }
+
+    if(this.color.toLowerCase() === 'special blue') {
+      finalPrice += 500
+    }
+
+    if(!this.baseColors.includes(this.color.toLowerCase())) {
+      finalPrice += 3000
+    }
+
+    // console.log(`Final price for ${this.brand} ${this.model} with ${this.engine} engine ${this.mileage} mileage and color ${this.color} is: ${finalPrice}`)
     return finalPrice
   }
   getDiscount(discount) {
@@ -46,13 +81,14 @@ class Cars {
   }
 } 
 
-const car1 = new Cars('VW', 'Golf', 'electric', 2000, 100000)
-const car2 = new Cars('Audi', 'A6', 'diesel', 5000, 400000)
+const car1 = new Cars('VW', 'Golf', 'electric', 2000, 100000, 'mėlyna')
+const car2 = new Cars('Audi', 'A6', 'diesel', 5000, 400000, 'special blue')
 console.log(car1)
 // car1.turnOn()
 console.log(car2)
-car1.getPrice()
-car2.getPrice()
-console.log(car1.getDiscount(0.1))
-console.log(car2.getDiscount(0.1))
+car1.getPriceText()
+// car2.getPrice()
+// console.log(car2.getDiscount(0))
+console.log(car1.getPriceText())
+console.log(car1.getDiscount(0))
 

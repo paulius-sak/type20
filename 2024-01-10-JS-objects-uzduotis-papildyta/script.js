@@ -215,7 +215,7 @@
 //        9.2. Veiklos rūšį iš veiklų masyvo.
 
 class Address {
-    constructor(country, city, street, apartment,) {
+    constructor(country, city, street, apartment) {
         this.country = country
         this.city = city
         this.street = street
@@ -282,6 +282,7 @@ class Company {
 
 const company1 = new Company('Company ABC', 1993, 'Lt12323', 12, 'Kazys Kazimieras', true, ['Lietuva', 'Latvija'], ['Mentoring', 'Lectures'], new Contact('8829393912', 'email@gmail.com', new Address('Lietuva', 'Vilnius', 'Santariskiu st. 1', '1'  )) )
 // const company2 = new Company('Company XYZ', 'John Doe')
+// console.log(company2)
 console.log(company1)
 console.log(company1.getAddress())
 console.log(company1.setNvoStatusFalse())
