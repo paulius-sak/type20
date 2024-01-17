@@ -311,57 +311,57 @@
 
 
 
-class Book {
-    constructor(title, author, year) {
-        this.title = title;
-        this.author = author;
-        this.year = year;
-    }
+// class Book {
+//     constructor(title, author, year) {
+//         this.title = title;
+//         this.author = author;
+//         this.year = year;
+//     }
     
-    getSummary() {
-        return `${this.title} by ${this.author} published in ${this.year}`;
-    }
-}
+//     getSummary() {
+//         return `${this.title} by ${this.author} published in ${this.year}`;
+//     }
+// }
 
-class Library {
-    constructor() {
-        this.books = [];
-        this.lentBooks = new Map();
-    }
+// class Library {
+//     constructor() {
+//         this.books = [];
+//         this.lentBooks = new Map();
+//     }
 
-    addBook(book) {
-        this.books.push(book);
-    }
+//     addBook(book) {
+//         this.books.push(book);
+//     }
 
-    lendBook(bookTitle, userName) {
-        const book = this.books.find(book => book.title === bookTitle);
-        if (book) {
-            this.books = this.books.filter(b => b !== book);
-            this.lentBooks.set(book, userName);
-        } else {
-            console.log("Book not available");
-        }
-    }
+//     lendBook(bookTitle, userName) {
+//         const book = this.books.find(book => book.title === bookTitle);
+//         if (book) {
+//             this.books = this.books.filter(b => b !== book);
+//             this.lentBooks.set(book, userName);
+//         } else {
+//             console.log("Book not available");
+//         }
+//     }
 
-    returnBook(bookTitle) {
-        const book = [...this.lentBooks.keys()].find(book => book.title === bookTitle);
-        if (book) {
-            this.books.push(book);
-            this.lentBooks.delete(book);
-        }
-    }
+//     returnBook(bookTitle) {
+//         const book = [...this.lentBooks.keys()].find(book => book.title === bookTitle);
+//         if (book) {
+//             this.books.push(book);
+//             this.lentBooks.delete(book);
+//         }
+//     }
 
-    listAvailableBooks() {
-        console.log("Available Books:");
-        this.books.forEach(book => console.log(book.getSummary()));
-    }
-}
+//     listAvailableBooks() {
+//         console.log("Available Books:");
+//         this.books.forEach(book => console.log(book.getSummary()));
+//     }
+// }
 
 
-const library = new Library();
-library.addBook(new Book("Book1", "Author1", "2020"));
-library.addBook(new Book("Book2", "Author2", "2021"));
-library.lendBook("Book1", "User1");
-library.listAvailableBooks(); // "Book2 by Author2 published in 2021"
-library.returnBook("Book1");
-library.listAvailableBooks(); // "Book2 by Author2 published in 2021", "Book1 by Author1 published in 2020"
+// const library = new Library();
+// library.addBook(new Book("Book1", "Author1", "2020"));
+// library.addBook(new Book("Book2", "Author2", "2021"));
+// library.lendBook("Book1", "User1");
+// library.listAvailableBooks(); // "Book2 by Author2 published in 2021"
+// library.returnBook("Book1");
+// library.listAvailableBooks(); // "Book2 by Author2 published in 2021", "Book1 by Author1 published in 2020"
