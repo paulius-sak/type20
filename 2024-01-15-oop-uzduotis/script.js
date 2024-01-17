@@ -110,7 +110,7 @@ class Cars {
                             <li class='car-info-item'><strong>basePrice: </strong>${basePrice}</li>`
                             
     carItem.append(carTitle, carImage, carInfoList);
-    document.body.append(carItem)
+    document.body.appendChild(carItem)
   }
 
 
