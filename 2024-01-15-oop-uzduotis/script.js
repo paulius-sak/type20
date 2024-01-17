@@ -14,8 +14,11 @@
 //        6.2. Jeigu nurodyta spalva yra 'special blue', tai automobilio kaina turi padidėti 500.
 //        6.3. Jeigu nurodytos spalvos nėra tarp bazinių spalvų, tai automobilio kaina turėtų padidėti 3000.
 
+// 7. Sukurti metodą 'renderElement', kuris sukurią html elementą, jame atvaizduoja automobilio informaciją (modelį, brandą, variklio tipą, kilometražą, spalvą, bazinę kainą) ir šį elementą išveda į ekraną.
+//        7.1. Pridėti property 'image' (nuotraukos nuoroda), kuris turėtų būti nuotrauka ir šią nuotrauką, taip pat, pridėti į formuluojamą elementą.
+
 class Cars {
-  constructor(brand, model, engine, basePrice, mileage, color = 'juoda') {
+  constructor(brand, model, engine, basePrice, mileage, color = 'juoda', image) {
     this.brand = brand
     this.model = model
     this.engine = engine
@@ -23,6 +26,7 @@ class Cars {
     this.mileage = mileage
     this.baseColors = ['juoda', 'raudona', 'mėlyna', 'sidabrinė', 'balta', 'special blue']
     this.color = color
+    this.image = image
     // this.finalPrice = basePrice
   }
   getPriceText() {
@@ -79,7 +83,40 @@ class Cars {
 
     return discountedPrice
   }
+
+  renderElement() {
+    
+
+    const carItem = document.createElement('div')
+    carItem.classList.add('car-item')
+  
+    const { brand, model, engine, mileage, color, basePrice} = this
+
+    const carTitle = document.createElement('h2')
+    carTitle.classList.add('car-title')
+    carTitle.textContent = `${brand} (${model})`
+
+    const carImage = document.createElement('img')
+    carImage.classList.add('car-image')
+    carImage.src = 'image.jpg'
+    carImage.alt = `${brand} ${model} car ${color} color`
+
+    const carInfoList = document.createElement('ul')
+    carInfoList.classList.add('car-info-list')
+
+    carInfoList.innerHTML = `<li class='car-info-item'><strong>Engine: </strong>${engine}</li>
+                            <li class='car-info-item'><strong>Mileage: </strong>${mileage}</li>
+                            <li class='car-info-item'><strong>color: </strong>${color}</li>
+                            <li class='car-info-item'><strong>basePrice: </strong>${basePrice}</li>`
+                            
+    carItem.append(carTitle, carImage, carInfoList);
+    document.body.append(carItem)
+  }
+
+
 } 
+
+
 
 const car1 = new Cars('VW', 'Golf', 'electric', 2000, 100000, 'mėlyna')
 const car2 = new Cars('Audi', 'A6', 'diesel', 5000, 400000, 'special blue')
@@ -91,4 +128,7 @@ car1.getPriceText()
 // console.log(car2.getDiscount(0))
 console.log(car1.getPriceText())
 console.log(car1.getDiscount(0))
+
+
+car1.renderElement()
 
