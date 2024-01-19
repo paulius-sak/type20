@@ -4483,10 +4483,15 @@ const cylindersAndMiles = cars.filter(car => car.Miles_per_Gallon >= 15 && car.C
 console.log(cylindersAndMiles)
 
 // 1.4  Parašyti komandą kuri gražins automobilius su pridėtu papildomu lauku ojekte, kuris vadinasi "Kilowatts", jis yra lygus "Horsepower" * 0.7457;
-cars.forEach(car => car.Kilowatts = car.Horsepower * 0.7457
-)
+// cars.forEach(car => car.Kilowatts = (car.Horsepower * 0.7457)
+// )
 
-console.log(cars)
+// console.log(cars)
+const userCars = cars.map((car)=>{
+  return {kilowats: (car.Horsepower * 0.7457).toFixed(2) , ...car}
+})
+
+console.log(userCars)
 
 // 1.5  Parašyti komandą kuri gražins automobilius išrikiuotus pagal "Weight_in_lbs" didėjančia tvarka.
 const weightSort = cars.sort((a, b) => a.Weight_in_lbs - b.Weight_in_lbs)
