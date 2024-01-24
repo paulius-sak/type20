@@ -1,0 +1,36 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: auto;
+    gap: 1rem;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgb(178, 200, 219);
+}
+
+#buttonLogin {
+    background-color: rgb(109, 109, 221);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+
+}
+#buttonLogin:hover {
+    cursor: pointer;
+    background-color: rgb(138, 138, 221);
+}
+#buttonLogin, 
+#userName,
+#password {
+    padding: 5px;
+}
+
+.successMessage {
+    color: green;
+    text-align: center;
+}
+.errorMessage {
+    color: red;
+    text-align: center;
+}
