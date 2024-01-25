@@ -11,6 +11,9 @@ localStorage.removeItem("userId")
 document.cookie = "customerId=1111"
 
 // 5. Atvaizduot ekrane customer cookie;
+const task5 = document.createElement('div')
+task5.innerHTML =`Cookies: ${document.cookie}` 
+document.body.appendChild(task5)
 
 console.log(document.cookie)
 
@@ -36,6 +39,8 @@ console.log(JSON.parse(productObj1))
 
 // 10. Padaryt validaciją, jei nėra nurodyta username ar password consolėj turi atsirast ne duomenis, o informacinė žinutė prašanti įvesti duomenis;
 
+// 11. Sėkmės atveju į ekraną išvesti žalią tekstą su sekmės žinute, neturint duomenų - raudoną tekstą su informacine žinute;
+
 const button = document.getElementById('buttonLogin')
 button.addEventListener('click', () => {
     
@@ -60,4 +65,3 @@ button.addEventListener('click', () => {
 
 
 
-// 11. Sėkmės atveju į ekraną išvesti žalią tekstą su sekmės žinute, neturint duomenų - raudoną tekstą su informacine žinute;
