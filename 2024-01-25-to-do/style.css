@@ -102,7 +102,7 @@ textarea {
     margin: 10px 0;
     cursor: pointer;
     width: 100%;
-    border-bottom: 1px solid grey;
+    border-bottom: 2px solid grey;
     gap: 10px;
     flex-wrap: wrap;
 }
@@ -126,6 +126,12 @@ textarea {
 }
 .done {
     background-color: green;
+}
+.task-card-done {
+    border-bottom: 2px solid green;
+}
+.task-card-in-progress {
+    border-bottom: 2px solid red;
 }
 
 
