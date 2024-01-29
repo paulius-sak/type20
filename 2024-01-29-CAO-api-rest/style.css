@@ -1,0 +1,25 @@
+#wrapper {
+    width: 400px;
+    text-align: center;
+    margin: auto;
+    background-color: rgb(196, 214, 214);
+    border-radius: 20px;
+}
+
+#image {
+    width: 200px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+#name-age-wrapper {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    font-weight: bold;
+}
+
+#email {
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
