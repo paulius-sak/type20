@@ -49,6 +49,7 @@ flex-wrap: nowrap;
 button:hover {
 color: #03d3b2;
 border: 1px solid #03d3b2;
+cursor: pointer;
 }
 
 #filters-container {
@@ -80,6 +81,7 @@ text-decoration: none;
 background-color: white;
 color: #03d3b2;
 border: 1px solid #03d3b2;
+cursor: pointer;
 }
 
 .selected {
@@ -92,6 +94,7 @@ border: 1px solid white;
 background-color: white;
 color: #03d3b2;
 border: 1px solid #03d3b2;
+cursor: pointer;
 }
 
 #properties-container {
@@ -131,7 +134,7 @@ gap: 1rem;
 }
 
 #add-property-form {
-width: 10rem;
+width: 50rem;
 }
 
 #add-property-form label {
