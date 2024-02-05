@@ -20,6 +20,8 @@ const fetchRickMorty = async () => {
         const card = document.createElement("div")
         card.classList.add("card")
 
+        
+
         const charName = document.createElement("h1")
         charName.classList.add("charName")
         charName.innerText = character.name

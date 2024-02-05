@@ -10,6 +10,9 @@ const ingredients = document.getElementById("ingredients")
 const recipeImg = document.getElementById("recipeImg")
 
 button.addEventListener("click", async () => {
+  if(!title.value || !description.value || !instructions.value || !ingredients.value || !recipeImg.value) {
+    return
+  }
     const recipeData = {
         title: title.value,
         description: description.value,
@@ -34,9 +37,9 @@ button.addEventListener("click", async () => {
 
     message.innerHTML = "Recipe was added successfully";
 
-  setTimeout(() => {
-    window.location.assign("./index.html");
-  }, 3000);
-
+    setTimeout(() => {
+      window.location.assign("./index.html");
+    }, 3000);
+  
 
 })

@@ -17,14 +17,13 @@ const letters = word.split("").map((letter) => {
   return { letter: letter, isRevealed: false };
 });
 
-console.log(letters)
 
 function updateDisplayedWord() {
     let displayedWord = "";
     for (let i = 0; i < word.length; i++) {
-      const currentLetter = word[i];
-      const isGuessed = letters.find((letter) => letter.letter === currentLetter && letter.isRevealed);
-      displayedWord += isGuessed ? currentLetter : "_";
+      const currentLetter = word[i]
+      const isGuessed = letters.find((letter) => letter.letter === currentLetter && letter.isRevealed)
+      displayedWord += isGuessed ? currentLetter : "_"
     }
     wordToGuess.textContent = displayedWord;
     guessedLetters.textContent = guessedLettersList.join(', ')
@@ -47,7 +46,7 @@ form.addEventListener("submit", (event) => {
       if (displayedWord === word) {
         result.textContent = "You won!";
         result.style.color = "green";
-        letterInput.disabled = true; // Disable input after winning
+        letterInput.disabled = true; 
       } else {
         result.textContent = "Correct";
         result.style.color = "green";

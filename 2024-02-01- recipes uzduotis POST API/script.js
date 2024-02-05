@@ -7,7 +7,13 @@ const fetchAnimals = async () => {
     console.log(recipes)
 
     recipes.forEach((recipe) => {
-        const card = document.createElement("div")
+        const card = document.createElement("a")
+        card.href = "./recipe/recipe.html"
+
+        card.addEventListener("click", () => {
+            localStorage.setItem("recipeId", recipe.id)
+        })
+
         card.setAttribute("class", "card")
         const title = document.createElement("h1")
         const description = document.createElement("p")

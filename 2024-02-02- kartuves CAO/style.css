@@ -1,3 +1,6 @@
+body {
+    background-color: rgb(135, 177, 152);
+}
 #game {
     font-family: Arial, sans-serif;
     max-width: 300px;
