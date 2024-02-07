@@ -5,4 +5,6 @@ const addCar = (element) => {
     element.innerHTML += carListHtml
 }
 
+
+
 export {addCar}

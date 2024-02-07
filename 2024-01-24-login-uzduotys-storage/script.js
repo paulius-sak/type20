@@ -41,6 +41,9 @@ console.log(JSON.parse(productObj1))
 
 // 11. Sėkmės atveju į ekraną išvesti žalią tekstą su sekmės žinute, neturint duomenų - raudoną tekstą su informacine žinute;
 
+const burgerButton = document.getElementById("burger-btn")
+const mobileMenu = document.getElementById("mobile-menu")
+
 const button = document.getElementById('buttonLogin')
 button.addEventListener('click', () => {
     
@@ -51,7 +54,13 @@ button.addEventListener('click', () => {
     const successMessage = document.getElementById('successMessage')
 
 
-    if (userName && password && userName.length >= 3 ) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    const passwordRegex = /^.{8,}$/
+
+    const isValidEmail = emailRegex.test(userName)
+    const isValidPassword = passwordRegex.test(password)
+
+    if (isValidEmail && isValidPassword) {
         localStorage.setItem("userName", userName)
         errorMessage.textContent = ''
         successMessage.textContent = 'Success!'
@@ -61,6 +70,10 @@ button.addEventListener('click', () => {
     }
     
     
+})
+
+burgerButton.addEventListener("click", () => {
+    mobileMenu.classList.toggle("active")
 })
 
 
