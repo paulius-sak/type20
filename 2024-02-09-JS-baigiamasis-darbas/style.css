@@ -1,0 +1,112 @@
+.body {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    .left-side-layout {
+        width: 80%;
+    }
+    .right-side-layout {
+        width: 300px;
+        margin-left: 5px;
+        margin-top: 200px;
+        position: sticky;
+        top: 0;
+        .vertical-ad {
+            width: 300px;
+            position: sticky;
+            top: 0;
+            
+            
+        }
+    }
+}
+.adContainer {
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.container-web {
+    width: 100%;
+}
+
+/* .logoBar {
+    border: 1px solid black;
+} */
+
+.logo img {
+    width: 200px;
+}
+
+.menu-bar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffcc01;
+    padding: 10px 20px;
+        .add-btn  {
+           background-color: #43a71e; 
+           border: none;
+           border-radius: 2px;
+           padding: 5px;
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+        .menu ul {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            margin: 0;
+
+                li {
+                    list-style-type: none;
+                        a {
+                            text-decoration: none;
+                            color: black;
+                            font-size: 18px;
+                        }
+                }
+            
+        }
+}   
+
+.posts-wrapper {
+    padding: 0;
+    
+    .card {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid rgb(177, 176, 176);
+            .post-img {
+                width: 200px;
+                height: 150px;
+                object-fit: cover;
+            }
+            .contentBlock {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding:  20px;
+                
+                .card-title {
+                    text-decoration: none;
+                    
+                }
+                .price {
+                    color: #43a71e;
+                    font-size: 24px;
+                    font-weight: bold;
+                    margin: 0;
+                    
+                }
+            }
+    }
+}
