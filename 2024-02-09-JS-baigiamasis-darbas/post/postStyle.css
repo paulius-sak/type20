@@ -71,39 +71,3 @@
             
         }
 }   
-
-.posts-wrapper {
-    padding: 0;
-    
-    .card {
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 20px;
-        border: none;
-        border-radius: 0;
-        border-bottom: 1px solid rgb(177, 176, 176);
-            .post-img {
-                width: 200px;
-                height: 150px;
-                object-fit: cover;
-            }
-            .contentBlock {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                padding:  20px;
-                
-                .card-title {
-                    text-decoration: none;
-                    
-                }
-                .price {
-                    color: #43a71e;
-                    font-size: 24px;
-                    font-weight: bold;
-                    margin: 0;
-                    
-                }
-            }
-    }
-}

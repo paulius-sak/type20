@@ -10,7 +10,7 @@ const fetchPosts = async () => {
 
     postsSorted.forEach((post) => {
         const card = document.createElement("a")
-        card.href = "./post.html"
+        card.href = "./post/post.html"
 
         card.addEventListener("click", () => {
             localStorage.setItem("postId", post.id)

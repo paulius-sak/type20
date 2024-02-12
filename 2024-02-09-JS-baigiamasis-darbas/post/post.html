@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ką tik nuo tralo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="postStyle.css">
 </head>
 <body>
     
@@ -13,13 +13,13 @@
                 <div id="carouselExampleAutoplaying" class="carousel slide " data-bs-ride="carousel">
                     <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./adImg/TC-12-2048x878.png.webp" class="d-block w-100" alt="ad">
+                        <img src="../adImg/TC-12-2048x878.png.webp" class="d-block w-100" alt="ad">
                     </div>
                     <div class="carousel-item">
-                        <img src="./adImg/TC-2-1600x686.png.webp" class="d-block w-100" alt="ad">
+                        <img src="../adImg/TC-2-1600x686.png.webp" class="d-block w-100" alt="ad">
                     </div>
                     <div class="carousel-item">
-                        <img src="./adImg/TC-7-2048x878.png.webp" class="d-block w-100" alt="ad">
+                        <img src="../adImg/TC-7-2048x878.png.webp" class="d-block w-100" alt="ad">
                     </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -38,7 +38,7 @@
             <section class="logoPLace container-web">
                 <div id="logoBar" class="logoBar">
                     <div id="logo" class="logo">
-                        <a href="./index.html"><img src="logo/logoColor.png" alt=""></a>
+                        <a href="../index.html"><img src="../logo/logoColor.png" alt=""></a>
                     </div>
                 </div>
             </section>
@@ -70,13 +70,36 @@
                 </div>
             </section>
 
-            <section id="posts-wrapper" class="posts-wrapper container-web"></section>
+
+            <section id="post-wrapper" class="post-wrapper container-web">
+                <div class="image-placeholder">
+                    <img id="img" class="img" src="" alt="">
+                </div>
+                <div class="info-placeholder">
+                    <div class="title-price-placeholder">
+                        <h4 id="post-title" class="post-title"></h4>
+                        <p id="post-price" class="post-price"></p>
+                    </div>
+                    <div class="description-location-placeholder">
+                        <p id="description" class="description"></p>
+                        <p class="location" id="location"></p>
+                    </div>
+                    <div class="button-message-placeholder">
+                        <button class="delete-post-btn" id="delete-post-btn">Istrinti Skelbima</button>
+                        <button class="go-back-btn" id="go-back-btn"><a href="../index.html">Grizti I Pradini Puslapi</a></button>
+                        <p class="message" id="message"></p>
+                    </div>
+                </div>
+            </section>
         </div>
         <div class="right-side-layout">
-            <img src="adImg/WEB PROGRAMER.png" alt="" class="vertical-ad">
+            <img src="../adImg/WEB PROGRAMER.png" alt="" class="vertical-ad">
         </div>
     </div>
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="scriptPost.js"></script>
+    <script src="./postScript.js"></script>
 </body>
 </html>
