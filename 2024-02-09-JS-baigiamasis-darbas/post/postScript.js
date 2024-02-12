@@ -20,7 +20,7 @@ const fetchPost = async () => {
     postTitle.innerText = post.title
     postPrice.innerText = `${post.price} €`
     postDescription.innerText = post.description
-    postLocation.innerText = post.location
+    postLocation.innerText = `🚩 ${post.location}`
     }
     
 fetchPost()
