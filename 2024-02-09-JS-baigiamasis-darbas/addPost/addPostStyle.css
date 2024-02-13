@@ -88,54 +88,31 @@
         }
 }   
 
-.posts-wrapper {
-    padding: 0;
-    
-    
-    .card {
+.add-post-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    .add-post-form {
         display: flex;
-        flex-direction: row;
-        margin-bottom: 20px;
-        border: none;
-        border-radius: 0;
-        border-bottom: 1px solid rgb(177, 176, 176);
-        overflow: hidden;
-       
-        .post-img {
-            width: 200px;
-            height: 150px;
-            object-fit: cover;
-            
-        }
-        .contentBlock {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            padding:  20px;
-            
-            .card-title {
-                text-decoration: none;
-                
+        flex-direction: column;
+        gap: 30px;
+            .label-input-wrapper {
+                display: flex;
+                flex-direction: column;
             }
-            .price {
-                color: #43a71e;
-                font-size: 24px;
-                font-weight: 700;
-                margin: 0;
-                
+            .addPostButton {
+                margin: auto;
+                padding: 4px 20px;
+                color: #fff;
+                background-color: #43a71e;
+                border: none;
             }
-        }
     }
-    .card:hover {
-        box-shadow: 0px 0px 10px 0px rgb(165, 165, 165);
-
-        .post-img {
-            transform:  scale(1.1);
-            transition: transform 0.3s ease-in;
-              
-        }
-    } 
-    
+    .statusMessage {
+        font-size: 20px;
+        margin: auto;
+        color: #43a71e;
+    }
 }
 
 .footer {

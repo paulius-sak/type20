@@ -144,6 +144,12 @@
                             color: black;
                         }
                 }
+                .message {
+                    font-size: 20px;
+                    color: #43a71e;
+                    margin: 0;
+                    font-weight: bold;
+                }
                 .delete-post-btn {
                     background-color: #43a71e;
                 }
