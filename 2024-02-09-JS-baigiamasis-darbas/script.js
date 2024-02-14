@@ -1,5 +1,8 @@
 const wrapper = document.getElementById("posts-wrapper")
 
+const burgerButton = document.getElementById("burger-btn")
+const mobileMenu = document.getElementById("mobile-menu")
+
 const fetchPosts = async () => {
     const response = await fetch("https://65c603d9e5b94dfca2e0c57d.mockapi.io/posts")
 
@@ -39,3 +42,7 @@ const fetchPosts = async () => {
 }
 
 fetchPosts()
+
+burgerButton.addEventListener("click", () => {
+    mobileMenu.classList.toggle("active")
+})

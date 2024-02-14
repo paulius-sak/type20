@@ -100,6 +100,42 @@
         }
 }   
 
+.mobile-menu {
+    width: 80%;
+    height: 100%;
+    background-color: #ffcc01;
+    position: fixed;
+    transition: 0.3s ease-in;
+    margin-left: 10%;
+    z-index: 2;
+    left: -100%;
+    display: none;
+        
+        ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding-top: 4rem;
+        }
+            li {
+                list-style-type: none;
+            }
+                a{
+                    font-size: 20px;
+                    text-decoration: none;
+                    color: white;
+                }
+                a:hover {
+                    text-decoration: underline;
+                }
+        
+}
+
+.active {
+    left: 0;
+}
+
 .posts-wrapper {
     padding: 0;
     
@@ -176,6 +212,7 @@
                                 list-style-type: none;
                                 display: flex;
                                 flex-direction: column;
+                                align-items: center;
                                 
                                 a {
                                     color: black;
@@ -208,5 +245,53 @@
         display: inline-block;
         cursor: pointer;
     }
+    .adContainer {
+       display: none;
+    }
+    .mobile-menu {
+        display: inline-block;
+    }
+    .logo img {
+        width: 100px;
+    }
+    .footer .footer-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .posts-wrapper .card .post-img {
+        width: 125px;
+        height: 100px;
+    }
+    .menu-bar .add-btn a {
+        font-size: 14px;
+    }
     
+}
+@media screen and (max-width: 576px) {
+    .main-body .left-side-layout {
+        width: 100%;
+    }
+    .posts-wrapper .card .contentBlock .card-title {
+        font-size: 12px;
+    }
+    .posts-wrapper .card .contentBlock .price {
+        font-size: 12px;
+    }
+    .posts-wrapper .card .post-img {
+        width: 100px;
+        height: 75px;
+    }
+    .posts-wrapper .card .contentBlock {
+        padding: 2px;
+    }
+    .mobile-menu {
+        width: 100%;
+        margin: 0;
+    }
+    .menu-bar .add-btn a {
+        font-size: 12px;
+    }
+    .footer {
+        font-size: 12px;
+    }
+        
 }
