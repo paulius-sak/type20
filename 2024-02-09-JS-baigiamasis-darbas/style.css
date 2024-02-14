@@ -5,6 +5,12 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.adContainer {
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+}
+
 .main-body {
     margin: 0 auto;
     display: flex;
@@ -29,16 +35,10 @@
         }
     }
 }
-.adContainer {
-    width: 600px;
-    margin: auto;
-    margin-top: 20px;
-}
 
 .container-web {
     width: 100%;
 }
-
 
 .logo img {
     width: 200px;
@@ -66,6 +66,18 @@
         }
         .add-btn:hover {
             box-shadow: 0px 0px 3px 0px black;
+        }
+        .menu {
+            display: flex;
+                .burger-btn {
+                    all: unset;
+                    /* .burger {
+                        display: none;
+                    } */
+                }
+            }
+        .burger {
+            display: none;
         }
         .menu ul {
             display: flex;
@@ -179,4 +191,22 @@
                     
                 }
         }
+}
+
+@media screen and (max-width: 1000px) {
+    .right-side-layout {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 850px) {
+    .menu ul a  {
+        display: none;
+    }
+    .menu .burger-btn .burger {
+        display: inline-block;
+        cursor: pointer;
+    }
+    
 }

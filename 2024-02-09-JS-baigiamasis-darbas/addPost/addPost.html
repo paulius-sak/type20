@@ -37,6 +37,7 @@
         </div>
     </div>
 
+    
     <div class="main-body">
         <div class="left-side-layout">
 
@@ -90,7 +91,8 @@
                             type="text"
                             id="postImg"
                             name="image"
-                            placeholder="https://google.com/logo.png"/>
+                            placeholder="https://google.com/logo.png"
+                            required/>
                     </div>
 
                     <div class="label-input-wrapper">
@@ -99,7 +101,8 @@
                             type="text"
                             id="postTitle"
                             name="title"
-                            placeholder="Piaggio Vespa"/>
+                            placeholder="Piaggio Vespa"
+                            required/>
                     </div>
 
                     <div class="label-input-wrapper">
@@ -108,7 +111,8 @@
                             type="number" 
                             id="postPrice" 
                             name="price" 
-                            placeholder="1500" />
+                            placeholder="1500" 
+                            required/>
                     </div>
                     <div class="label-input-wrapper">
                         <label for="postDescription">Aprašymas</label>
@@ -116,9 +120,10 @@
                             type="text"
                             id="postDescription"
                             name="description"
-                            placeholder="Prekės aprašymas..."/>
+                            placeholder="Prekės aprašymas..."
+                            required/>
                     </div>
-                    <select name="city" id="postCity">
+                    <select name="city" id="postCity" required>
                         <option value="">Pasirinkti miestą...</option>
                         <option value="Vilnius">Vilnius</option>
                         <option value="Kaunas">Kaunas</option>
