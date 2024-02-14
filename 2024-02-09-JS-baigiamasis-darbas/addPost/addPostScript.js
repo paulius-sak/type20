@@ -8,6 +8,9 @@ const newPostPrice = document.getElementById("postPrice")
 const newPostDescription = document.getElementById("postDescription")
 const newPostCity = document.getElementById("postCity")
 
+const burgerButton = document.getElementById("burger-btn")
+const mobileMenu = document.getElementById("mobile-menu")
+
 addPostButton.addEventListener("click", async (event) => {
     event.preventDefault()
     if (
@@ -46,7 +49,15 @@ addPostButton.addEventListener("click", async (event) => {
       const addedPost = await response.json()
       console.log(addedPost)
       statusMessage.innerText = "Skelbimas patalpintas sėkmingai.";
+
+
+      setTimeout(() => {
+        window.location.assign("../index.html")
+      }, 5000)
   
-  
+})
+
+burgerButton.addEventListener("click", () => {
+    mobileMenu.classList.toggle("active")
 })
 

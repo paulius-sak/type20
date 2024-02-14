@@ -67,6 +67,18 @@
         .add-btn:hover {
             box-shadow: 0px 0px 3px 0px black;
         }
+        .menu {
+            display: flex;
+                .burger-btn {
+                    all: unset;
+                    /* .burger {
+                        display: none;
+                    } */
+                }
+            }
+        .burger {
+            display: none;
+        }
         .menu ul {
             display: flex;
             gap: 15px;
@@ -87,6 +99,42 @@
             
         }
 }   
+
+.mobile-menu {
+    width: 80%;
+    height: 100%;
+    background-color: #ffcc01;
+    position: fixed;
+    transition: 0.3s ease-in;
+    margin-left: 10%;
+    z-index: 2;
+    left: -100%;
+    display: none;
+        
+        ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding-top: 4rem;
+        }
+            li {
+                list-style-type: none;
+            }
+                a{
+                    font-size: 20px;
+                    text-decoration: none;
+                    color: white;
+                }
+                a:hover {
+                    text-decoration: underline;
+                }
+        
+}
+
+.active {
+    left: 0;
+}
 
 .add-post-wrapper {
     display: flex;
@@ -118,6 +166,7 @@
 .footer {
     background-color: #f7f5f4;
     border-top: 4px solid #ffcc01;
+    margin-top: 100px;
         .footer-list {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -141,6 +190,7 @@
                                 list-style-type: none;
                                 display: flex;
                                 flex-direction: column;
+                                align-items: flex-start;
                                 
                                 a {
                                     color: black;
@@ -156,4 +206,57 @@
                     
                 }
         }
+}
+
+@media screen and (max-width: 1025px) {
+    .right-side-layout {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 900px) {
+    .menu ul a  {
+        display: none;
+    }
+    .menu-bar .menu .burger-btn .burger {
+        display: inline-block;
+        cursor: pointer;
+    }
+    .adContainer {
+       display: none;
+    }
+    .mobile-menu {
+        display: inline-block;
+    }
+    .logo img {
+        width: 100px;
+    }
+    .footer .footer-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .menu-bar .add-btn a {
+        font-size: 14px;
+    }
+    
+}
+@media screen and (max-width: 576px) {
+    .main-body .left-side-layout {
+        width: 100%;
+    }
+    .add-post-wrapper {
+        padding: 10px;
+    }
+    .mobile-menu {
+        width: 100%;
+        margin: 0;
+    }
+    .menu-bar .add-btn a {
+        font-size: 12px;
+    }
+    .footer {
+        font-size: 12px;
+    }
+        
 }

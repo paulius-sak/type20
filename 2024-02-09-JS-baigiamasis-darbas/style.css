@@ -138,8 +138,7 @@
 
 .posts-wrapper {
     padding: 0;
-    
-    
+
     .card {
         display: flex;
         flex-direction: row;
@@ -189,6 +188,7 @@
 .footer {
     background-color: #f7f5f4;
     border-top: 4px solid #ffcc01;
+    
         .footer-list {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -212,7 +212,7 @@
                                 list-style-type: none;
                                 display: flex;
                                 flex-direction: column;
-                                align-items: center;
+                                align-items: flex-start;
                                 
                                 a {
                                     color: black;

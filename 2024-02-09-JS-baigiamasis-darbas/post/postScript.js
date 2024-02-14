@@ -9,6 +9,9 @@ const postDeleteButton = document.getElementById("delete-post-btn")
 const postMessage = document.getElementById("message")
 
 
+const burgerButton = document.getElementById("burger-btn")
+const mobileMenu = document.getElementById("mobile-menu")
+
 const fetchPost = async () => {
     const response = await fetch(`https://65c603d9e5b94dfca2e0c57d.mockapi.io/posts/${postId}`)
     
@@ -34,4 +37,13 @@ postDeleteButton.addEventListener("click", async () => {
     const post = await response.json()
 
     postMessage.innerText = "Skelbimas Istrintas"
+
+     setTimeout(() => {
+      window.location.assign("../index.html")
+    }, 5000)
+  
+})
+
+burgerButton.addEventListener("click", () => {
+    mobileMenu.classList.toggle("active")
 })
