@@ -22,7 +22,7 @@ addPostButton.addEventListener("click", async (event) => {
         !newPostDescription.value ||
         !newPostCity.value
     ) {
-        statusMessage.innerText = "Užpildykite visus laukelius teisingai."
+        statusMessage.innerText = "Užpildykite Visus Laukelius Teisingai."
         statusMessage.style.color = 'red';
         return;
     }
@@ -48,7 +48,7 @@ addPostButton.addEventListener("click", async (event) => {
   
       const addedPost = await response.json()
       console.log(addedPost)
-      statusMessage.innerText = "Skelbimas patalpintas sėkmingai.";
+      statusMessage.innerText = "Skelbimas Patalpintas Sėkmingai.";
 
 
       setTimeout(() => {

@@ -1,140 +1,4 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-}
-
-.main-body {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-
-    .left-side-layout {
-        width: 80%;
-    }
-    .right-side-layout {
-        width: 300px;
-        margin-left: 5px;
-        margin-top: 200px;
-        position: sticky;
-        top: 0;
-        .vertical-ad {
-            width: 300px;
-            position: sticky;
-            top: 0;
-            
-            
-        }
-    }
-}
-.adContainer {
-    width: 600px;
-    margin: auto;
-    margin-top: 20px;
-}
-
-.container-web {
-    width: 100%;
-}
-
-
-.logo img {
-    width: 200px;
-}
-
-.menu-bar {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ffcc01;
-    padding: 10px 20px;
-        .add-btn  {
-           background-color: #43a71e; 
-           border: none;
-           border-radius: 2px;
-           padding: 5px;
-           cursor: pointer;
-           font-size: 18px;
-            a {
-                text-decoration: none;
-                color: #fff;
-            }
-            
-        }
-        .add-btn:hover {
-            box-shadow: 0px 0px 3px 0px black;
-        }
-        .menu {
-            display: flex;
-                .burger-btn {
-                    all: unset;
-                    /* .burger {
-                        display: none;
-                    } */
-                }
-            }
-        .burger {
-            display: none;
-        }
-        .menu ul {
-            display: flex;
-            gap: 15px;
-            align-items: center;
-            margin: 0;
-
-                li {
-                    list-style-type: none;
-                        a {
-                            text-decoration: none;
-                            color: black;
-                            font-size: 18px;
-                        }
-                        a:hover {
-                            color: #fff;
-                        }
-                }
-            
-        }
-}   
-
-.mobile-menu {
-    width: 80%;
-    height: 100%;
-    background-color: #ffcc01;
-    position: fixed;
-    transition: 0.3s ease-in;
-    margin-left: 10%;
-    z-index: 2;
-    left: -100%;
-    display: none;
-        
-        ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-        padding-top: 4rem;
-        }
-            li {
-                list-style-type: none;
-            }
-                a{
-                    font-size: 20px;
-                    text-decoration: none;
-                    color: white;
-                }
-                a:hover {
-                    text-decoration: underline;
-                }
-        
-}
-
-.active {
-    left: 0;
-}
+@import '../variables.css';
 
 .add-post-wrapper {
     display: flex;
@@ -151,61 +15,16 @@
             .addPostButton {
                 margin: auto;
                 padding: 4px 20px;
-                color: #fff;
-                background-color: #43a71e;
+                color: var(--text-color-white);
+                background-color: var(--secondary-color);
                 border: none;
             }
     }
     .statusMessage {
         font-size: 20px;
         margin: auto;
-        color: #43a71e;
+        color: var(--secondary-color);
     }
-}
-
-.footer {
-    background-color: #f7f5f4;
-    border-top: 4px solid #ffcc01;
-    margin-top: 100px;
-        .footer-list {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            justify-items: center;
-            align-items: center;
-                .footer-logo {
-                    width: 100px;
-                    padding: 20px;
-                }
-                .footer-box {
-                    display: flex;
-                    flex-direction: column;
-                    
-                        ul {
-                            display: flex;
-                            flex-direction: column;
-                            padding: 0;
-                            margin: 0;
-                            
-                            li {
-                                list-style-type: none;
-                                display: flex;
-                                flex-direction: column;
-                                align-items: flex-start;
-                                
-                                a {
-                                    color: black;
-                                    padding-bottom: 10px;
-                                }
-                                a:hover {
-                                    transform: scale(1.1);
-                                    transition: 0.3s ease;
-                                }
-                                
-                            }
-                        }
-                    
-                }
-        }
 }
 
 @media screen and (max-width: 1025px) {

@@ -36,7 +36,7 @@ postDeleteButton.addEventListener("click", async () => {
 
     const post = await response.json()
 
-    postMessage.innerText = "Skelbimas Istrintas"
+    postMessage.innerText = "Skelbimas Ištrintas"
 
      setTimeout(() => {
       window.location.assign("../index.html")
